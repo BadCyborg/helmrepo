@@ -16,4 +16,4 @@ spec:
         - name: nodeapp
           image: localhost:32000/nodeapp
           ports:
-            - containerPort: 3000
+            - containerPort: 8888
