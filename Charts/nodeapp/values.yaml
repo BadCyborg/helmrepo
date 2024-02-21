@@ -28,6 +28,17 @@ serviceAccount:
 podAnnotations: {}
 podLabels: {}
 
+container:
+  name: nodeapp
+  image: localhost:32000/nodeapp
+  port: 8888
+
+nodeservice:
+  type: NodePort
+  port: 8090
+  targetPort: 8888
+
+  
 podSecurityContext: {}
   # fsGroup: 2000
 
