@@ -38,6 +38,10 @@ nodeservice:
   port: 8090
   targetPort: 8888
 
+traefik:
+  port: 8090
+  
+
   
 podSecurityContext: {}
   # fsGroup: 2000
