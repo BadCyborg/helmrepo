@@ -16,8 +16,9 @@ spec:
         - name: {{ .Values.container.name }}
           image: {{ .Values.container.image }}
           ports:
-            - containerPort: {{ .Values.container.port }}
-               name: http
+            - name: http
+              containerPort: {{ .Values.container.port }}
+              protocol: TCP
           livenessProbe:
             httpGet:
               path: /admin
