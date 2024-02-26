@@ -17,6 +17,7 @@ spec:
           image: {{ .Values.container.image }}
           ports:
             - containerPort: {{ .Values.container.port }}
+               name: http
           livenessProbe:
             httpGet:
               path: /admin
