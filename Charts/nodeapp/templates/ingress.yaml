@@ -10,15 +10,15 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: {{ .Release.Name }}
+            name: testing
             port:
               number: {{ .Values.traefik.port }}
       - path: /admin
         pathType: Prefix
         backend:
           service:
-            name: {{ .Release.Name }}
+            name: test
             port:
-              number: {{ .Values.traefik.port }}
+              number: {{ .Values.traefik.porta }}
               
       
