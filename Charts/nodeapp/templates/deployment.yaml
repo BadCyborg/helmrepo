@@ -17,3 +17,11 @@ spec:
           image: {{ .Values.container.image }}
           ports:
             - containerPort: {{ .Values.container.port }}
+          livenessProbe:
+            httpGet:
+              path: /admin
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /admin
+              port: http
