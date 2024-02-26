@@ -12,4 +12,13 @@ spec:
           service:
             name: {{ .Release.Name }}
             port:
-              number: {{ .Values.traefik.port }} 
+              number: {{ .Values.traefik.port }}
+      - path: /admin
+        pathType: Prefix
+        backend:
+          service:
+            name: {{ .Release.Name }}
+            port:
+              number: {{ .Values.traefik.port }}
+              
+      
