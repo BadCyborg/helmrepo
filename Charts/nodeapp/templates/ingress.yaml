@@ -19,6 +19,6 @@ spec:
           service:
             name: test
             port:
-              number: {{ .Values.traefik.porta }}
+              number: {{ .Values.traefik.port }}
               
       
