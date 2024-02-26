@@ -6,6 +6,6 @@ spec:
   selector:
     app: {{ .Release.Name }}
   ports:
-    - port: {{ .Values.cloneservice.port }}
-      targetPort: {{ .Values.cloneservice.targetPort }}
-  type: {{ .Values.cloneservice.type }}
+    - port: {{ .Values.nodeservice.port }}
+      targetPort: {{ .Values.nodeservice.targetPort }}
+  type: {{ .Values.nodeservice.type }}
