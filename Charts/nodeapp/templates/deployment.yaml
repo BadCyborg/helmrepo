@@ -27,3 +27,5 @@ spec:
             httpGet:
               path: /admin
               port: http
+      imagePullSecrets:
+      - name: {{ .Values.container.secret }}
