@@ -30,8 +30,9 @@ podLabels: {}
 
 container:
   name: nodeapp
-  image: localhost:32000/nodeapp
+  image: qlwklq3/nodeapp
   port: 8888
+  secret: regcred
 
 nodeservice:
   type: ClusterIP
