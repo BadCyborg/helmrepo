@@ -6,19 +6,13 @@ spec:
   rules:
   - http:
       paths:
-      - path: /fe
+      - path: /
         pathType: Prefix
         backend:
           service:
-            name: testing
+            name: nodeapp
             port:
-              number: {{ .Values.traefik.port }}
-      - path: /admin
-        pathType: Prefix
-        backend:
-          service:
-            name: test
-            port:
-              number: {{ .Values.traefik.port }}
+              number: {{ .Values.nginx.port }}
+     
               
       
