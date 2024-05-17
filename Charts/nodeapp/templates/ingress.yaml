@@ -5,7 +5,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: nodeapp.badcyborg.xyz
+  - host: localhost:32469
     http:
       paths:
       - path: /
